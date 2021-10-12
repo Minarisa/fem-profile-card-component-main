@@ -1,0 +1,63 @@
+:root {
+    --primary-color: hsl(185, 75%, 39%);
+    --secondary-color: white;
+    --primary-font-color: hsl(229, 23%, 23%);
+    --secondary-font-color: hsl(227, 10%, 46%);
+    --accent-color: hsl(0, 0%, 59%);
+
+    --main-font: "Kumbh Sans", sans-serif;
+    --bold-font: 700;
+    --normal-font: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--main-font);
+}
+
+main {
+    width: 330px;
+}
+
+#profile_card {
+    height: 285px;
+    background-image: url(./images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+img {
+    margin-top: 75px;
+}
+
+#profile_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 4.5rem;
+    background-color: yellowgreen;
+}
+
+
+#stats {
+    height: 90px;
+    background: red;
+}
