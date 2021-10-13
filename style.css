@@ -3,11 +3,13 @@
     --secondary-color: white;
     --primary-font-color: hsl(229, 23%, 23%);
     --secondary-font-color: hsl(227, 10%, 46%);
-    --accent-color: hsl(0, 0%, 59%);
+    --accent-color: hsla(0, 0%, 59%, 0.25);
 
     --main-font: "Kumbh Sans", sans-serif;
     --bold-font: 700;
     --normal-font: 400;
+
+    --radius: 1.3rem;
 }
 
 * {
@@ -26,38 +28,92 @@ body {
     align-items: center;
     justify-content: center;
     font-family: var(--main-font);
+    color: var(--primary-font-color);
 }
 
 main {
-    width: 330px;
+    width: 20.6rem;
+    font-size: 1.1rem;
 }
 
 #profile_card {
-    height: 285px;
+    border-bottom: 1px solid var(--accent-color);
+    height: 18rem;
     background-image: url(./images/bg-pattern-card.svg);
     background-repeat: no-repeat;
     background-color: var(--secondary-color);
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+
 }
 
 img {
-    margin-top: 75px;
+    border-radius: 50%;
+}
+
+#img_wrapper {
+    margin-top: 5rem;
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
 }
 
 #profile_info {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     height: 4.5rem;
-    background-color: yellowgreen;
 }
 
+#name {
+    font-weight: var(--bold-font);
+}
+
+#age,
+#city {
+    color: var(--secondary-font-color);
+}
+
+#city {
+    font-size: 0.85rem;
+}
+
+ul {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
 
 #stats {
-    height: 90px;
-    background: red;
+
+    height: 5.6rem;
+    background-color: var(--secondary-color);
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+.stat_number {
+    font-weight: var(--bold-font);
+}
+
+.stat_info {
+    padding: 0.3rem;
+    font-size: 0.6rem;
+    color: var(--secondary-font-color);
+    letter-spacing: 0.1rem;
+}
+
+footer {
+    padding: 0.2rem;
+    font-size: 0.7rem;
 }
