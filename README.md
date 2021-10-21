@@ -24,8 +24,8 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: 
+- Solution URL: [GitHub](https://github.com/Minarisa/fem-profile-card-component-main)
+- Live Site URL: [GitHub Page](https://minarisa.github.io/fem-profile-card-component-main/)
 
 ### Built with
 
